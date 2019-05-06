@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Aclonica', sans-serif;
+}
+
+h1{
+    color: whitesmoke;
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+    text-shadow: 0 0 20px #cc00cc;
+}
+
+body{
+    background: radial-gradient(#16206a, #140123);
+    text-align: center;
+}
+
+#container{
+    box-shadow: 0 0 50px black;
+    width: 1690px;
+    height: 630px;
+    border: 1px solid black;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 10px;
+    background: radial-gradient(#140123, #16206a)
+}
+.card{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    border-radius: 10px;
+    perspective: 1000px;
+    box-shadow: 0 0 5px black;
+}
+
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+
+.back{
+    background: url("img/Default.png");
+}
+
+.back.flipped{
+    transform: rotateY(180deg);
+}
+
+.front{
+    transform: rotateY(-180deg);
+}
+
+.front.flipped{
+    transform: rotateY(0deg);
+}
+
+.card:hover, .face.flipped{
+    box-shadow: 0 0 50px #cc00cc;
+}
+
+.face.flipped.match{
+    box-shadow: 0 0 50px #331f6d;
+}
+
+#modalGameOver{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -2;
+}
+
+#imgGameOver{
+    margin-top: 100px;
+}
+
+#match{
+    position: relative;
+    top: 250px;
+    transition-property: top, opacity;
+    transition-duration: 5.0s;
+    opacity: 1;
+    z-index: -1; 
+}
+
