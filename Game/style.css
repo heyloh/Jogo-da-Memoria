@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Aclonica', sans-serif;
+    font-family: 'Press Start 2P', cursive;
 }
 
 h1{
@@ -86,7 +86,7 @@ body{
     position: relative;
     top: 250px;
     transition-property: top, opacity;
-    transition-duration: 5.0s;
+    transition-duration: 2.0s;
     opacity: 1;
     z-index: -1; 
 }
