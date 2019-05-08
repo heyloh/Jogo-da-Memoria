@@ -1,0 +1,40 @@
+*{
+    padding: 20px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    color: whitesmoke;
+    text-shadow: 0 0 15px #cc00cc;
+}
+h2{
+    font-size: 25px;
+    color: whitesmoke;
+    text-shadow: 0 0 15px #cc00cc;
+}
+
+p{
+    color: whitesmoke;
+    font-size: 30px;
+    text-shadow: 0 0 10px #cc00cc;
+}
+body{
+    background: radial-gradient(#16206a, #140123);
+}
+
+button{
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: #cc00cc;
+    border-color: #cc00cc;
+    box-shadow: 0 0 10px white;
+    text-align: center;
+}
+td{
+    color: whitesmoke;
+    text-shadow: 0 0 5px #cc00cc;
+    text-align: left;
+    padding: 10px;
+}
