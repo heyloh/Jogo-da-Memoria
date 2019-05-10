@@ -111,7 +111,7 @@
         function gamerOver() {
             modalGameOver.style.zIndex = 50;
             modalGameOver.addEventListener("click", function () {
-                window.location.href = fase2.html;
+                location.href = "fase2.html";
             }, false);
         }
 
