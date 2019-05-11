@@ -6,10 +6,9 @@
 
 h1{
     color: yellow;
-    font-size: 40px;
-    padding: 60px;
+    padding: 10px;
     text-align: center;
-    text-shadow: 0 0 20px orange;
+    text-shadow: 0 0 100px orange;
 }
 
 body{

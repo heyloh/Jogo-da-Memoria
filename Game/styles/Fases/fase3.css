@@ -5,15 +5,13 @@
 }
 
 h1{
-    color: white;
-    font-size: 40px;
-    padding: 60px;
+    padding: 10px;
     text-align: center;
     text-shadow: 0 0 20px #ac0120 ;
 }
 
 body{
-    background: radial-gradient(#eba856,#da3223);
+    background: radial-gradient(#66ac80,#3ba849);
     text-align: center;
 }
 
@@ -93,8 +91,8 @@ body{
 button{
     border-radius: 5px;
     color: white;
-    background-color: #165a37;
-    border-color: #8d8258;
+    background-color: #eba856;
+    border-color: #eba856;
     box-shadow: 0 0 5px #b0253f;
     text-align: center;
 }

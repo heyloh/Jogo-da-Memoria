@@ -5,9 +5,7 @@
 }
 
 h1{
-    color: #796bae;
-    font-size: 40px;
-    padding: 60px;
+    padding: 10px;
     text-align: center;
     text-shadow: 0 0 10px black;
 }
@@ -100,7 +98,7 @@ button{
 }
 p{
     color: #796bae;
-    text-shadow: 0 0 10px white;
+    text-shadow: 0 0 15px white;
     text-align: center;
     font-size: 20PX;
 }
