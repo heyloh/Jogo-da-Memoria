@@ -13,7 +13,7 @@ h1{
 }
 
 body{
-    background: radial-gradient(#1091c4, #11339a);
+    background: radial-gradient(#01648b, #001142);
     text-align: center;
 }
 
@@ -25,7 +25,7 @@ body{
     position: relative;
     margin: 10px auto;
     border-radius: 10px;
-    background: radial-gradient( #11339a, #1091c4)
+    background: radial-gradient( #550015, #e542a7)
 }
 .card{
     width: 200px;
@@ -92,14 +92,14 @@ body{
 }
 button{
     border-radius: 2px;
-    color: #fe0000;
-    background-color: whitesmoke;
-    border: whitesmoke;   
+    color: white;
+    background-color: rgb(255, 102, 0);
+    border: rgb(255, 115, 0);   
     box-shadow: 0 0 5px white;
     text-align: center;
 }
 p{
-    color: #e542a7;
+    color: white;
     text-shadow: 0 0 10px black;
     text-align: center;
     font-size: 20PX;
