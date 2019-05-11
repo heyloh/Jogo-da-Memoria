@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1{
+    color: #796bae;
+    font-size: 40px;
+    padding: 60px;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+}
+
+body{
+    background: radial-gradient(#171286, #060229);
+    text-align: center;
+}
+
+#container{
+    box-shadow: 0 0 50px black;
+    width: 1690px;
+    height: 645px;
+    border: 1px solid black;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 10px;
+    background: radial-gradient( #060229, #171286)
+}
+.card{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px;
+    perspective: 1000px;
+    box-shadow: 0 0 5px black;
+}
+
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+
+.back{
+    background: url("../../pages/Fases/Fase6/Default.png");
+}
+
+.back.flipped{
+    transform: rotateY(180deg);
+}
+
+.front{
+    transform: rotateY(-180deg);
+}
+
+.front.flipped{
+    transform: rotateY(0deg);
+}
+
+.card:hover, .face.flipped{
+    box-shadow: 0 0 50px white;
+}
+
+.face.flipped.match{
+    box-shadow: 0 0 50px white;
+}
+
+#modalGameOver{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -2;
+}
+
+#imgGameOver{
+    margin-top: 100px;
+}
+
+#match{
+    position: relative;
+    top: 250px;
+    transition-property: top, opacity;
+    transition-duration: 2.0s;
+    opacity: 1;
+    z-index: -1; 
+}
+button{
+    border-radius: 2px;
+    color: #c66de5;
+    background-color: white;
+    border: white;   
+    box-shadow: 0 0 5px white;
+    text-align: center;
+}
+p{
+    color: #796bae;
+    text-shadow: 0 0 10px white;
+    text-align: center;
+    font-size: 20PX;
+}
+.player{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
