@@ -12,10 +12,10 @@
 
     matchSign = document.getElementById("match");
 
-    for (var i = 0; i < 16; i++) {
+    for (var i = 0; i < 24; i++) {
         var img = {
-            src: "img/" + i + ".png",
-            id: i % 8
+            src: "Fase3/" + i + ".png",
+            id: i % 12
         };
         images.push(img);
     }
@@ -32,16 +32,15 @@
         var frontFaces = document.getElementsByClassName("front");
         var backFaces = document.getElementsByClassName("back");
 
-        for (var i = 0; i < 16; i++) {
+        for (var i = 0; i < 24; i++) {
 
-            backFaces[i].classList.remove("match","flipped");
-            frontFaces[i].classList.remove("match","flipped");
-            
+            backFaces[i].classList.remove("match", "flipped");
+            frontFaces[i].classList.remove("match", "flipped");
+
+
             var card = document.getElementById("card" + i);
-            card.style.left = i % 8 === 0 ? 10 + "px" : i % 8 * 210 + 10 + "px";
-            //i * 8 retorna para i a sobra de i por 8, ou seja i= 8 % 8 = 0, i= 9 % 8 = 1, i=10 % 8 = 2
-            //basicamente retorna o i para o zero no final da primeira fileira
-            card.style.top = i < 8 ? 10 + "px" : 320 + "px";
+            card.style.left = (i % 8 === 0) ? 10 + "px" : (i % 8) * 210 + 10 + "px";
+            card.style.top = i < 8 ? 10 + "px" : (i < 16 ? 220 + "px" : 435 + "px");
 
             card.addEventListener("click", flipCard, false);
 
@@ -49,7 +48,7 @@
             frontFaces[i].setAttribute("id", images[i].id);
         }
         modalGameOver.style.zIndex = "-2";
-        modalGameOver.removeEventListener('click', function(){
+        modalGameOver.removeEventListener('click', function () {
             startGame();
         }, false);
     }
@@ -92,7 +91,7 @@
 
                     flippledCards = [];
 
-                    if (matches >= 8) {
+                    if (matches >= 12) {
                         gamerOver();
                     }
                 }
@@ -110,7 +109,7 @@
         function gamerOver() {
             modalGameOver.style.zIndex = 50;
             modalGameOver.addEventListener("click", function () {
-                location.href = "Fases/fase1.html";
+                location.href = "fase4.html";
             }, false);
         }
 

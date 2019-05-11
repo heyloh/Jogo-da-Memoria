@@ -7,7 +7,7 @@
 h1{
     color: whitesmoke;
     font-size: 40px;
-    padding: 20px;
+    padding: 65px;
     text-align: center;
     text-shadow: 0 0 20px #cc00cc;
 }
@@ -103,5 +103,10 @@ p{
     text-shadow: 0 0 10px #cc00cc;
     text-align: center;
     font-size: 20PX;
+}
+.player{
+    position: absolute;
+    left: 5px;
+    top: 5px;
 }
 

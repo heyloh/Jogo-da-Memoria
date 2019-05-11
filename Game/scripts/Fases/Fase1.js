@@ -89,8 +89,6 @@
 
                     matches++;
 
-                    document.getElementById("score").innerHTML = matches;
-
                     flippledCards = [];
 
                     if (matches >= 12) {
