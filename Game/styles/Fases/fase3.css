@@ -5,27 +5,27 @@
 }
 
 h1{
-    color: #6d5531;
+    color: white;
     font-size: 40px;
     padding: 60px;
     text-align: center;
-    text-shadow: 0 0 10px black ;
+    text-shadow: 0 0 20px #ac0120 ;
 }
 
 body{
-    background: radial-gradient(#3a588a,#151d4c);
+    background: radial-gradient(#eba856,#da3223);
     text-align: center;
 }
 
 #container{
-    box-shadow: 0 0 50px black;
+    box-shadow: 0 0 50px #b0253f;
     width: 1690px;
     height: 645px;
-    border: 1px solid black;
+    border: 5px solid #b0253f;
     position: relative;
     margin: 10px auto;
     border-radius: 10px;
-    background: radial-gradient( #242c19,#4c553e);
+    background: radial-gradient( #da3223,#eba856);
 }
 .card{
     width: 200px;
@@ -62,11 +62,11 @@ body{
 }
 
 .card:hover, .face.flipped{
-    box-shadow: 0 0 50px rgb(63, 97, 105);
+    box-shadow: 0 0 50px #b0253f;
 }
 
 .face.flipped.match{
-    box-shadow: 0 0 50px rgb(53, 114, 114);
+    box-shadow: 0 0 50px #b0253f;
 }
 
 #modalGameOver{
@@ -92,16 +92,15 @@ body{
 }
 button{
     border-radius: 5px;
-    color: #626262;
-
-    background-color: #141414;
-    border-color: #141414;
-    box-shadow: 0 0 5px #4c553e;
+    color: white;
+    background-color: #165a37;
+    border-color: #8d8258;
+    box-shadow: 0 0 5px #b0253f;
     text-align: center;
 }
 p{
-    color: #626262;
-    text-shadow: 0 0 10px black;
+    color: white;
+    text-shadow: 0 0 10px #b0253f;
     text-align: center;
     font-size: 20PX;
 }
